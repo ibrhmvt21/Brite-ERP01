@@ -1,7 +1,7 @@
 package com.events.utilities;
 
 import com.events.pages.*;
-
+//1
 public class pages {
 
 	private LoginPage loginPage;

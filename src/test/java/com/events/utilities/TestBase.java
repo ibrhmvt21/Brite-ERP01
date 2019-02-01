@@ -19,7 +19,7 @@ public abstract class TestBase {
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
     protected pages page;
-
+  //1
     @BeforeMethod
     public void setupMethod() {
         driver = Driver.getDriver();

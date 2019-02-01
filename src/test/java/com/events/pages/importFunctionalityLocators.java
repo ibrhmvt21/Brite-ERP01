@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.events.utilities.Driver;
-
+//1
 public class importFunctionalityLocators {
 	public importFunctionalityLocators() {
 		PageFactory.initElements(Driver.getDriver(), this);
@@ -35,7 +35,7 @@ public class importFunctionalityLocators {
 		loadFileBtn.click();
 
 		String system=System.getProperty("os.name");
-		StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\Book1.xlsx");
+		StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\Book2.xlsx");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 		Robot robot = new Robot();
 		
