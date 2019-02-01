@@ -15,19 +15,20 @@ import java.util.concurrent.TimeUnit;
 public abstract class TestBase {
     protected WebDriver driver;
 
-/*    protected static ExtentReports report;
+    protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
-    protected static ExtentTest extentLogger;*/
-
+    protected static ExtentTest extentLogger;
+    protected pages page;
 
     @BeforeMethod
     public void setupMethod() {
         driver = Driver.getDriver();
+        page= new pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }
 
-    /*@AfterMethod
+    @AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
         // if any test fails, it can detect it,
         // take a screen shot at the point and attach to report
@@ -76,5 +77,5 @@ public abstract class TestBase {
     @AfterTest
     public void tearDownTest() {
         report.flush();
-    }*/
+    }
 }
