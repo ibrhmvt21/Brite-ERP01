@@ -13,7 +13,7 @@ import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 
-public class smoke_Test extends TestBase {
+public class smoke_Test_IBK extends TestBase {
 
     /*
     User Story

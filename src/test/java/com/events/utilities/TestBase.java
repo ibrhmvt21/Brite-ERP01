@@ -69,7 +69,7 @@ public abstract class TestBase {
         htmlReporter.config().setDocumentTitle("Prestashop Reports");
         htmlReporter.config().setReportName("Prestashop Automated Test Reports");
 
-//        htmlReporter.config().setTheme(Theme.DARK);
+//       htmlReporter.config().setTheme(Theme.DARK);
 
     }
 
