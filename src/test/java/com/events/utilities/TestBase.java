@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.events.pages.eventCategoriesPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
@@ -15,10 +16,9 @@ import java.util.concurrent.TimeUnit;
 public abstract class TestBase {
     protected WebDriver driver;
 
-/*    protected static ExtentReports report;
+/*  protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;*/
-
 
     @BeforeMethod
     public void setupMethod() {
@@ -26,6 +26,14 @@ public abstract class TestBase {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }
+
+
+//    @BeforeMethod
+//    public void setupMethod() {
+//        driver = Driver.getDriver();
+//        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//        driver.get(ConfigurationReader.getProperty("url"));
+//    }
 
     /*@AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
