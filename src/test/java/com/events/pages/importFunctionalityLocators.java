@@ -50,9 +50,11 @@ public class importFunctionalityLocators {
 
 		}else if(system.contains("Mac")) {		
 			robot.keyPress(KeyEvent.VK_META);
-			robot.keyPress(KeyEvent.VK_TAB);
+			robot.keyPress(KeyEvent.VK_SHIFT);
+			robot.keyPress(KeyEvent.VK_G);
 			robot.keyRelease(KeyEvent.VK_META);
-			robot.keyRelease(KeyEvent.VK_TAB);
+			robot.keyRelease(KeyEvent.VK_SHIFT);
+			robot.keyRelease(KeyEvent.VK_G);
 			robot.delay(2000);
 			robot.keyPress(KeyEvent.VK_META);
 			robot.keyPress(KeyEvent.VK_SHIFT);
