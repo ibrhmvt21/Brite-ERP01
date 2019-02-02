@@ -10,6 +10,7 @@ import com.events.utilities.ConfigurationReader;
 import com.events.utilities.Driver;
 
 public class LoginPage extends BrowserUtils {
+
 	public LoginPage() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
@@ -28,8 +29,7 @@ public class LoginPage extends BrowserUtils {
 	
 	@FindBy(xpath="//a[@data-menu='124']")
 	private WebElement EventsModule;
-	
-	
+
 	public void loginAsUser() {
 
 		homepage.click();

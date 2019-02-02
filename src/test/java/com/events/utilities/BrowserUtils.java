@@ -22,7 +22,7 @@ import static org.testng.Assert.fail;
 //	OPTIONAL
 
 public class BrowserUtils {
-	private String test="ghjkljhgjkm,";
+    private String test="ghjkljhgjkm,";
 
     public static void wait(int secs) {
         try {
@@ -77,16 +77,16 @@ public class BrowserUtils {
         }
         Driver.getDriver().switchTo().window(origin);
     }
-    
+
     public static void switchToWindow(int number) {
-    	ArrayList<String> all=new ArrayList<>();
+        ArrayList<String> all=new ArrayList<>();
         String origin = Driver.getDriver().getWindowHandle();
-        
-        for (String handle : Driver.getDriver().getWindowHandles()) 
-        	all.add(handle);
-        
-        	
-          
+
+        for (String handle : Driver.getDriver().getWindowHandles())
+            all.add(handle);
+
+
+
         Driver.getDriver().switchTo().window(all.get(number-1));
         return;
     }
@@ -295,4 +295,3 @@ public class BrowserUtils {
     }
 
 }
-

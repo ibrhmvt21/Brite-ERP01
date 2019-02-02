@@ -3,7 +3,7 @@ package com.events.utilities;
 import com.events.pages.*;
 //1
 public class pages {
-
+	private SearchFunctionalityLocators searchF;
 	private LoginPage loginPage;
 	private importFunctionalityLocators importF;
 	
@@ -21,4 +21,14 @@ public class pages {
 	        }
 	        return importF;
 	    }
+
+
+	public SearchFunctionalityLocators searchFunctionality() {
+		if (searchF == null) {
+			searchF = new SearchFunctionalityLocators();
+		}
+		return searchF;
+	}
+
+
 }

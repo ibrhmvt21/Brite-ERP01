@@ -7,11 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.events.pages.importFunctionalityLocators;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+import static org.testng.Assert.assertTrue;
 
 public class smoke_Test_IBK extends TestBase {
 
@@ -26,6 +30,9 @@ Acceptance Criteria
 
 Verify manger is able to create an event via link labeled as "create"
      */
+
+    import_createLocators_IBK loc = new import_createLocators_IBK();
+
 
     public String setStartDate() {
         DateFormat form = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss");
@@ -56,8 +63,6 @@ Verify manger is able to create an event via link labeled as "create"
     public List <String> createText(String xPath){
         List <WebElement> allBtnz=driver.findElements(By.xpath(xPath));
 
-
-
         List <String> text=new ArrayList<>();
 
         for(int i=0; i<allBtnz.size(); i++) {
@@ -69,11 +74,7 @@ Verify manger is able to create an event via link labeled as "create"
     @Test
     public void createEventAsManager() {
 
-        LoginPage page = new LoginPage();
-        import_createLocators_IBK loc = new import_createLocators_IBK();
-
-
-        page.loginAsManager();
+        page.login().loginAsManager();
         //click on create button
         loc.createBtn.click();
         //fill out required fields on create event form
@@ -102,10 +103,8 @@ Verify manger is able to create an event via link labeled as "create"
 
     @Test
     public void createEventAsUser(){
-        LoginPage page = new LoginPage();
-        import_createLocators_IBK loc = new import_createLocators_IBK();
 
-        page.loginAsUser();
+        page.login().loginAsUser();
 
         Assert.assertFalse(createText("//button").contains("Create"));
 
@@ -113,14 +112,11 @@ Verify manger is able to create an event via link labeled as "create"
 
     @Test
     public void importEventAsUser(){
-        LoginPage page = new LoginPage();
-        import_createLocators_IBK loc = new import_createLocators_IBK();
 
-        page.loginAsUser();
+        page.login().loginAsUser();
 
         Assert.assertFalse(createText("//button").contains("Import"));
 
     }
-
 
 }

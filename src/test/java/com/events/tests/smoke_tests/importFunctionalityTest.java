@@ -35,10 +35,11 @@ public class importFunctionalityTest extends TestBase {
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");
 
-		page.importFunctionality().importBtn.click();
+		page.importFunctionality().importBtn2.click();
 		page.importFunctionality().loadFile();
 		extentLogger.info("Uploading file...");
 
+		BrowserUtils.waitForVisibility(page.importFunctionality().MapString, 10);
 		assertTrue(page.importFunctionality().MapString.isDisplayed());
 		extentLogger.info("uploaded file successfully");
 		extentLogger.pass("Passed: Import File Upload Test");
