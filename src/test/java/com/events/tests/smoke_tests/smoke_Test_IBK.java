@@ -7,11 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.events.pages.importFunctionalityLocators;
 
+import java.io.File;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
+
+import static org.testng.Assert.assertTrue;
 
 public class smoke_Test_IBK extends TestBase {
 
@@ -121,6 +125,13 @@ Verify manger is able to create an event via link labeled as "create"
         Assert.assertFalse(createText("//button").contains("Import"));
 
     }
+
+    @Test
+    public void findEventCategories(){
+
+
+    }
+
 
 
 }
