@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.events.utilities.BrowserUtils;
 import com.events.utilities.ConfigurationReader;
 import com.events.utilities.Driver;
 
@@ -35,7 +36,11 @@ public class LoginPage extends BrowserUtils {
 		email.sendKeys(ConfigurationReader.getProperty("eventsUserName"));
 		pwd.sendKeys(ConfigurationReader.getProperty("eventsUserPwd"));
 		loginBtn.click();
+
 		wait(5);
+
+		//BrowserUtils.waitForClickablility(EventsModule, 5);
+
 		EventsModule.click();
 	}
 
@@ -44,7 +49,10 @@ public class LoginPage extends BrowserUtils {
 		email.sendKeys(ConfigurationReader.getProperty("eventsManagerName"));
 		pwd.sendKeys(ConfigurationReader.getProperty("eventsManagerPwd"));
 		loginBtn.click();
+
 		wait(5);
+
+		//BrowserUtils.waitForClickablility(EventsModule, 5);
 		EventsModule.click();
 	}
 

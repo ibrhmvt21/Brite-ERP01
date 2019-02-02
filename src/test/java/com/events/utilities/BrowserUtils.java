@@ -1,5 +1,5 @@
 package com.events.utilities;
-
+//1
 import com.google.common.base.Function;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -76,6 +76,19 @@ public class BrowserUtils {
             }
         }
         Driver.getDriver().switchTo().window(origin);
+    }
+    
+    public static void switchToWindow(int number) {
+    	ArrayList<String> all=new ArrayList<>();
+        String origin = Driver.getDriver().getWindowHandle();
+        
+        for (String handle : Driver.getDriver().getWindowHandles()) 
+        	all.add(handle);
+        
+        	
+          
+        Driver.getDriver().switchTo().window(all.get(number-1));
+        return;
     }
 
     public static void hover(WebElement element) {
