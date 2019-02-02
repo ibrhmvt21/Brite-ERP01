@@ -5,9 +5,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class eventCategoriesPage {
+public class eventCats_Locators {
 
-    public eventCategoriesPage() {
+    public eventCats_Locators() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
@@ -31,5 +31,8 @@ public class eventCategoriesPage {
 
     @FindBy(xpath = "//li[.='Event Categories']")
     public WebElement eventCatText;
+
+    @FindBy(xpath = "//title[contains(text(),'Event Categories - Odoo')]")
+    public WebElement ecTitle;
 
 }

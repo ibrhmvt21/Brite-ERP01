@@ -1,23 +1,22 @@
 package com.events.tests.smoke_tests;
 
 import com.events.pages.LoginPage;
-import com.events.pages.eventCategoriesPage;
+import com.events.pages.eventCats_Locators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.Assert;
-import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
-public class PercySmokeTests extends TestBase {
+public class SmokeTest_EventCat_P extends TestBase {
 
     LoginPage page;
     BrowserUtils utils;
-    eventCategoriesPage evencat = new eventCategoriesPage();
-
+    eventCats_Locators evencat = new eventCats_Locators();
 
 
     @Test(description = "Testing Event Categories / BRIT-385" )
     public void verifyOnline(){
+
         page = new LoginPage();
         page.loginAsManager();
 
@@ -36,8 +35,9 @@ public class PercySmokeTests extends TestBase {
     }
 
 
-    @Test(description = "Testing Event Categories / BRIT-387 (negative)")
-    public void verifyTitle(){
+    @Test(description = "Testing Event Categories / BRIT-387")
+    public void titleContainsOdoo(){
+
         page = new LoginPage();
         page.loginAsManager();
 
@@ -47,14 +47,14 @@ public class PercySmokeTests extends TestBase {
         utils.wait(5);
         evencat.eventCat.click();
 
-        String expectedTitle = "Event Categories - Odoo";
-        String actualTitle = driver.getTitle();
-        Assert.assertEquals(actualTitle,expectedTitle);
+        Assert.assertTrue(driver.getTitle().contains("Odoo"));
+
     }
 
 
     @Test(description = "Testing Event Categories / BRIT-394")
     public void verifyURL(){
+
         page = new LoginPage();
         page.loginAsUser();
 
@@ -66,5 +66,6 @@ public class PercySmokeTests extends TestBase {
 
         String expectedURL = "http://52.39.162.23/web?#view_type=list&model=event.type&menu_id=127&action=139";
         Assert.assertEquals(driver.getCurrentUrl(), expectedURL);
+
     }
 }
