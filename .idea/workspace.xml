@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3d2a461-f6df-4178-9df2-656fbbe8fca0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b3d2a461-f6df-4178-9df2-656fbbe8fca0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,13 +42,13 @@
         <counts>
           <entry key="html" value="1" />
           <entry key="ignoregit" value="40" />
-          <entry key="java" value="1753" />
+          <entry key="java" value="1757" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="1753" />
+          <entry key="JAVA" value="1757" />
           <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
@@ -76,20 +74,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="101" selection-start-line="97" selection-end-line="101" />
-              <folding>
-                <element signature="e#3061#3062#0" expanded="true" />
-                <element signature="e#3082#3083#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.ignoregit">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -168,7 +162,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/searchFunctionalityTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/events/testoutput/Report.html" />
-        <option value="$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/events/utilities/BrowserUtils.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/events/utilities/ApplicationConstants.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/events/utilities/TestBase.java" />
@@ -177,6 +170,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/events/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_Test.java" />
         <option value="$PROJECT_DIR$/.ignoregit" />
+        <option value="$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java" />
       </list>
     </option>
   </component>
@@ -293,7 +287,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549175486554" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549211960108" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -568,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/searchFunctionalityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_Test.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -585,21 +572,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="101" selection-start-line="97" selection-end-line="101" />
-          <folding>
-            <element signature="e#3061#3062#0" expanded="true" />
-            <element signature="e#3082#3083#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ignoregit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/searchFunctionalityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
         </state>
       </provider>
     </entry>

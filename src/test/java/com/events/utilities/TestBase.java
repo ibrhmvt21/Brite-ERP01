@@ -3,9 +3,7 @@ package com.events.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
@@ -18,15 +16,24 @@ public abstract class TestBase {
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
+<<<<<<< HEAD
 
+=======
+    protected pages page;
+>>>>>>> ed25287707781e44855c4220d0ff4ec0a84b200a
 
     @BeforeMethod
     public void setupMethod() {
         driver = Driver.getDriver();
+        page= new pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ed25287707781e44855c4220d0ff4ec0a84b200a
     @AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
         // if any test fails, it can detect it,
@@ -69,7 +76,7 @@ public abstract class TestBase {
         htmlReporter.config().setDocumentTitle("Prestashop Reports");
         htmlReporter.config().setReportName("Prestashop Automated Test Reports");
 
-//        htmlReporter.config().setTheme(Theme.DARK);
+//       htmlReporter.config().setTheme(Theme.DARK);
 
     }
 
