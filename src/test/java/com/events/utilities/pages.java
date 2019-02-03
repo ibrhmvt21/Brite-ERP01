@@ -6,6 +6,9 @@ public class pages {
 	private SearchFunctionalityLocators searchF;
 	private LoginPage loginPage;
 	private importFunctionalityLocators importF;
+	private eventCats_Locators evencats;
+	
+	
 	
 	  public LoginPage login() {
 	        if (loginPage == null) {
@@ -29,6 +32,12 @@ public class pages {
 		}
 		return searchF;
 	}
-
+	
+	public eventCats_Locators evencat() {
+		if (evencats == null) {
+			evencats = new eventCats_Locators();
+		}
+		return evencats;
+	}
 
 }

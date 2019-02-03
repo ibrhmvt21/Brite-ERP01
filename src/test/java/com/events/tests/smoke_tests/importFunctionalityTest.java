@@ -13,7 +13,7 @@ import com.events.utilities.TestBase;
 
 public class importFunctionalityTest extends TestBase {
 //1
-	//@Test
+	@Test
 	public void importHelpLinkTest() {
 		extentLogger = report.createTest("Validating Help link Test");
 		page.login().loginAsManager();
@@ -35,7 +35,7 @@ public class importFunctionalityTest extends TestBase {
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");
 
-		page.importFunctionality().importBtn2.click();
+		page.importFunctionality().importBtn.click();
 		page.importFunctionality().loadFile();
 		extentLogger.info("Uploading file...");
 
