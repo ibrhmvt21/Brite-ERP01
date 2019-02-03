@@ -28,19 +28,21 @@ public class LoginPage {
 	private WebElement EventsModule;
 	
 	
-	public void loginAsUser() {
+	public void loginAsUser() throws Exception {
 		homepage.click();
 		email.sendKeys(ConfigurationReader.getProperty("eventsUserName"));
 		pwd.sendKeys(ConfigurationReader.getProperty("eventsUserPwd"));
 		loginBtn.click();
+		Thread.sleep(5000);
 		EventsModule.click();
 	}
 
-	public void loginAsManager() {
+	public void loginAsManager() throws Exception {
 		homepage.click();
 		email.sendKeys(ConfigurationReader.getProperty("eventsManagerName"));
 		pwd.sendKeys(ConfigurationReader.getProperty("eventsManagerPwd"));
 		loginBtn.click();
+		Thread.sleep(6000);
 		EventsModule.click();
 	}
 
