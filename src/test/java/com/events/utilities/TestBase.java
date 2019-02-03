@@ -16,11 +16,10 @@ public abstract class TestBase {
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
-<<<<<<< HEAD
 
-=======
+
     protected pages page;
->>>>>>> ed25287707781e44855c4220d0ff4ec0a84b200a
+
 
     @BeforeMethod
     public void setupMethod() {
@@ -30,10 +29,9 @@ public abstract class TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
     }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> ed25287707781e44855c4220d0ff4ec0a84b200a
+
+
     @AfterMethod
     public void tearDownMethod(ITestResult result) throws IOException {
         // if any test fails, it can detect it,
