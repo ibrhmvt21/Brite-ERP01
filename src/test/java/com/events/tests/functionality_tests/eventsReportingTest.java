@@ -95,9 +95,5 @@ public class eventsReportingTest extends TestBase {
         Assert.assertTrue(ActTitle,"Download xls");
 	}
 
-	@AfterMethod
-	public void closeWeb(){
-		driver.close();
-	}
 
 }
