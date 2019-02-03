@@ -95,5 +95,4 @@ public class eventsReportingTest extends TestBase {
         Assert.assertTrue(ActTitle,"Download xls");
 	}
 
-
 }
