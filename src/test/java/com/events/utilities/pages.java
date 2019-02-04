@@ -6,6 +6,7 @@ public class pages {
 
 	private LoginPage loginPage;
 	private importFunctionalityLocators importF;
+	private listbuttonlocators listButton;
 	
 	  public LoginPage login() {
 	        if (loginPage == null) {
@@ -21,4 +22,12 @@ public class pages {
 	        }
 	        return importF;
 	    }
+
+	public listbuttonlocators listButtonLocators() {
+		if (listButton == null) {
+			listButton = new listbuttonlocators();
+		}
+		return listButton;
+	}
+
 }
