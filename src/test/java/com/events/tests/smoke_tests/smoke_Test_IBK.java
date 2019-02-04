@@ -72,7 +72,7 @@ Verify manger is able to create an event via link labeled as "create"
     }
 
     @Test
-    public void createEventAsManager() {
+    public void createEventAsManager() throws Exception {
 
         page.login().loginAsManager();
         //click on create button
@@ -102,7 +102,7 @@ Verify manger is able to create an event via link labeled as "create"
     }
 
     @Test
-    public void createEventAsUser(){
+    public void createEventAsUser() throws Exception {
 
         page.login().loginAsUser();
 
@@ -111,7 +111,7 @@ Verify manger is able to create an event via link labeled as "create"
     }
 
     @Test
-    public void importEventAsUser(){
+    public void importEventAsUser() throws Exception {
 
         page.login().loginAsUser();
 

@@ -15,7 +15,7 @@ public class SmokeTest_EventCat_P extends TestBase {
 
 
     @Test(description = "Testing Event Categories / BRIT-385" )
-    public void verifyOnline(){
+    public void verifyOnline() throws Exception {
 
         page = new LoginPage();
         page.loginAsManager();
@@ -36,7 +36,7 @@ public class SmokeTest_EventCat_P extends TestBase {
 
 
     @Test(description = "Testing Event Categories / BRIT-387")
-    public void titleContainsOdoo(){
+    public void titleContainsOdoo() throws Exception {
 
         page = new LoginPage();
         page.loginAsManager();
@@ -53,7 +53,7 @@ public class SmokeTest_EventCat_P extends TestBase {
 
 
     @Test(description = "Testing Event Categories / BRIT-394")
-    public void verifyURL(){
+    public void verifyURL() throws Exception {
 
         page = new LoginPage();
         page.loginAsUser();

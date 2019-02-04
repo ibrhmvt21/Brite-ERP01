@@ -14,7 +14,7 @@ import com.events.utilities.TestBase;
 public class importFunctionalityTest extends TestBase {
 //1
 	@Test
-	public void importHelpLinkTest() {
+	public void importHelpLinkTest() throws Exception {
 		extentLogger = report.createTest("Validating Help link Test");
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");
@@ -30,7 +30,7 @@ public class importFunctionalityTest extends TestBase {
 	}
 	
 	@Test
-	public void importFileUploadTest() throws InterruptedException, AWTException {
+	public void importFileUploadTest() throws Exception {
 		extentLogger=report.createTest("File Upload Test in import functionality");
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");

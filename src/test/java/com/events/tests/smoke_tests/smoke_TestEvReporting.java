@@ -6,7 +6,7 @@ import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.annotations.Test;
 
-public class smoke_Test extends TestBase {
+public class smoke_TestEvReporting extends TestBase {
 
 //    public static void main(String[] args) {
 //        System.out.println("sth");
@@ -21,6 +21,8 @@ public class smoke_Test extends TestBase {
 
         page = new LoginPage();
         page.loginAsManager();
+
+
 
 
     }
