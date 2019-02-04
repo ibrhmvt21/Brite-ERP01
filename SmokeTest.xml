@@ -7,6 +7,8 @@
 			<class name="com.events.tests.smoke_tests.eventCatTests"></class>
 			<class name="com.events.tests.smoke_tests.importFunctionalityTest"></class>
 			<class name="com.events.tests.smoke_tests.searchFunctionalityTest"></class>	
+			<class name="com.events.tests.smoke_tests.listButtonFunctionalityTest"></class>	
+			
 		</classes>
 	</test>
 </suite>

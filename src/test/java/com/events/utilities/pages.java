@@ -7,6 +7,7 @@ public class pages {
 	private LoginPage loginPage;
 	private importFunctionalityLocators importF;
 	private eventCats_Locators evencats;
+	private listbuttonlocators list;
 	
 	
 	
@@ -39,5 +40,13 @@ public class pages {
 		}
 		return evencats;
 	}
-
+	
+	
+	
+	public listbuttonlocators listButtonLocators() {
+		if (list == null) {
+			list = new listbuttonlocators();
+		}
+		return list;
+	}
 }
