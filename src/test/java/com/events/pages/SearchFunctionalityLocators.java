@@ -4,7 +4,7 @@ import com.events.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+//2
 public class SearchFunctionalityLocators {
     public SearchFunctionalityLocators() {
         PageFactory.initElements(Driver.getDriver(),this);

@@ -18,11 +18,9 @@ public class importFunctionalityLocators {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
-	@FindBy(xpath = "//input[@id='my-file-selector']")
-	public WebElement importBtn;
 
 	@FindBy(xpath = "//button[@class='btn btn-sm btn-default o_button_import']")
-	public WebElement importBtn2;
+	public WebElement importBtn;
 
 
 	@FindBy(xpath = "//a[@class='pull-right']")
@@ -41,19 +39,24 @@ public class importFunctionalityLocators {
 
 		String system=System.getProperty("os.name");
 
-		Robot robot = new Robot();
-		
+	
 		if(system.contains("Windows")) {
+			
             loadFileBtn.click();
             StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\Book2.xlsx");
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+        	Robot robot = new Robot();
+    		
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		Thread.sleep(3000);
+		
+		
+
 
 		}else if(system.contains("Mac")) {
 

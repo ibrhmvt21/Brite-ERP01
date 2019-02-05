@@ -1,13 +1,14 @@
 package com.events.utilities;
 
 import com.events.pages.*;
-//1
 public class pages {
 	private SearchFunctionalityLocators searchF;
 	private LoginPage loginPage;
 	private importFunctionalityLocators importF;
 	private listbuttonlocators listButton;
-	
+	private eventCats_Locators evencats;
+	private listbuttonlocators list;
+
 	  public LoginPage login() {
 	        if (loginPage == null) {
 	            loginPage = new LoginPage();
@@ -23,7 +24,6 @@ public class pages {
 	        return importF;
 	    }
 
-<<<<<<< HEAD
 
 	public SearchFunctionalityLocators searchFunctionality() {
 		if (searchF == null) {
@@ -33,7 +33,6 @@ public class pages {
 	}
 
 
-=======
 	public listbuttonlocators listButtonLocators() {
 		if (listButton == null) {
 			listButton = new listbuttonlocators();
@@ -41,5 +40,20 @@ public class pages {
 		return listButton;
 	}
 
->>>>>>> 2ada7bb1720267051996fa47f81804637f5638dd
+
+	public eventCats_Locators evencat() {
+		if (evencats == null) {
+			evencats = new eventCats_Locators();
+		}
+		return evencats;
+	}
+	
+	
+	
+	public listbuttonlocators listButtonLocators() {
+		if (list == null) {
+			list = new listbuttonlocators();
+		}
+		return list;
+	}
 }

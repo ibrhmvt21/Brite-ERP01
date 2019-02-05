@@ -17,7 +17,7 @@ import java.util.*;
 
 import static org.testng.Assert.assertTrue;
 
-public class smoke_Test_IBK extends TestBase {
+public class createEventTests extends TestBase {
 
     /*
     User Story
