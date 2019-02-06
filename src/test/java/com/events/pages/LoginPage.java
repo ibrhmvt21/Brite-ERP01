@@ -31,14 +31,14 @@ public class LoginPage extends BrowserUtils {
 	private WebElement EventsModule;
 
 
-	public void loginAsUser() throws Exception {
+	public void loginAsUser()  {
 
 
 			homepage.click();
 			email.sendKeys(ConfigurationReader.getProperty("eventsUserName"));
 			pwd.sendKeys(ConfigurationReader.getProperty("eventsUserPwd"));
 			loginBtn.click();
-			Thread.sleep(5000);
+
 
 			wait(5);
 
@@ -47,12 +47,12 @@ public class LoginPage extends BrowserUtils {
 			EventsModule.click();
 		}
 
-		public void loginAsManager () throws Exception {
+		public void loginAsManager ()  {
 			homepage.click();
 			email.sendKeys(ConfigurationReader.getProperty("eventsManagerName"));
 			pwd.sendKeys(ConfigurationReader.getProperty("eventsManagerPwd"));
 			loginBtn.click();
-			Thread.sleep(6000);
+
 
 			wait(5);
 

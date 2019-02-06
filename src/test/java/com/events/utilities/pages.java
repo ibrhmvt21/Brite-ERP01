@@ -50,10 +50,5 @@ public class pages {
 	
 	
 	
-	public listbuttonlocators listButtonLocators() {
-		if (list == null) {
-			list = new listbuttonlocators();
-		}
-		return list;
-	}
+
 }
