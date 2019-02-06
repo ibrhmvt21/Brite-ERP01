@@ -35,7 +35,7 @@ public class importFunctionalityTest extends TestBase {
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");
 
-		page.importFunctionality().importBtn2.click();
+		page.importFunctionality().importBtn.click();
 		page.importFunctionality().loadFile();
 		extentLogger.info("Uploading file...");
 

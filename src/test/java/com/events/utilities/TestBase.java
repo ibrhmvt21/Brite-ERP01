@@ -64,10 +64,10 @@ public abstract class TestBase {
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
 
-        report.setSystemInfo("QA Engineer", "Admiral Kunkka");
+        report.setSystemInfo("QA Engineer", "ELITE SQUAD");
 
-        htmlReporter.config().setDocumentTitle("Prestashop Reports");
-        htmlReporter.config().setReportName("Prestashop Automated Test Reports");
+        htmlReporter.config().setDocumentTitle("BriteERP Events Module");
+        htmlReporter.config().setReportName("Smoke Test Reports");
 
 //       htmlReporter.config().setTheme(Theme.DARK);
 

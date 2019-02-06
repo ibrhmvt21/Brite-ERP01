@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 import static org.testng.Assert.assertEquals;
 
-public class listButton_Functionality extends TestBase {
+public class listButtonFunctionalityTest extends TestBase {
 
 
     @Test
@@ -23,8 +23,8 @@ public class listButton_Functionality extends TestBase {
         extentLogger.info("List button been clicked");
         page.listButtonLocators().listbutton.click();
         Thread.sleep(4000);
-        String value = page.listButtonLocators().number.getText();
-        //Assert.assertEquals(value,number);
+        String actual = page.listButtonLocators().number.getText();
+        //Assert.assertEquals(actual.contains());
         extentLogger.pass("verified List button functionality");
     }
 
