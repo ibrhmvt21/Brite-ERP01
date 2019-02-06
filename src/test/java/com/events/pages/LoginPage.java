@@ -26,34 +26,39 @@ public class LoginPage extends BrowserUtils {
 
 	@FindBy(xpath = "//button[@class='btn btn-primary']")
 	private WebElement loginBtn;
-	
-	@FindBy(xpath="//a[@data-menu='124']")
+
+	@FindBy(xpath = "//a[@data-menu='124']")
 	private WebElement EventsModule;
 
-	public void loginAsUser() {
 
-		homepage.click();
-		email.sendKeys(ConfigurationReader.getProperty("eventsUserName"));
-		pwd.sendKeys(ConfigurationReader.getProperty("eventsUserPwd"));
-		loginBtn.click();
+	public void loginAsUser()  {
 
-		wait(5);
 
-		//BrowserUtils.waitForClickablility(EventsModule, 5);
+			homepage.click();
+			email.sendKeys(ConfigurationReader.getProperty("eventsUserName"));
+			pwd.sendKeys(ConfigurationReader.getProperty("eventsUserPwd"));
+			loginBtn.click();
 
-		EventsModule.click();
+
+			wait(5);
+
+			//BrowserUtils.waitForClickablility(EventsModule, 5);
+
+			EventsModule.click();
+		}
+
+		public void loginAsManager ()  {
+			homepage.click();
+			email.sendKeys(ConfigurationReader.getProperty("eventsManagerName"));
+			pwd.sendKeys(ConfigurationReader.getProperty("eventsManagerPwd"));
+			loginBtn.click();
+
+
+			wait(5);
+
+			//BrowserUtils.waitForClickablility(EventsModule, 5);
+			EventsModule.click();
+		}
+
 	}
 
-	public void loginAsManager() {
-		homepage.click();
-		email.sendKeys(ConfigurationReader.getProperty("eventsManagerName"));
-		pwd.sendKeys(ConfigurationReader.getProperty("eventsManagerPwd"));
-		loginBtn.click();
-
-		wait(5);
-
-		//BrowserUtils.waitForClickablility(EventsModule, 5);
-		EventsModule.click();
-	}
-
-}

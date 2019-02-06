@@ -16,7 +16,10 @@ public abstract class TestBase {
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
     protected static ExtentTest extentLogger;
+
+
     protected pages page;
+
 
     @BeforeMethod
     public void setupMethod() {
