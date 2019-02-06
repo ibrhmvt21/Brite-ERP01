@@ -1,7 +1,5 @@
 package com.events.tests.smoke_tests;
 
-import com.events.pages.LoginPage;
-import com.events.pages.eventCats_Locators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.Assert;

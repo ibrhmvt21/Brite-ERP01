@@ -17,7 +17,7 @@ import java.util.*;
 
 import static org.testng.Assert.assertTrue;
 
-public class smoke_Test_IBK extends TestBase {
+//public class smoke_Test_IBK extends TestBase {
 
     /*
     User Story
@@ -30,7 +30,7 @@ Acceptance Criteria
 
 Verify manger is able to create an event via link labeled as "create"
      */
-
+/*
     import_createLocators_IBK loc = new import_createLocators_IBK();
 
 
@@ -120,3 +120,4 @@ Verify manger is able to create an event via link labeled as "create"
     }
 
 }
+*/

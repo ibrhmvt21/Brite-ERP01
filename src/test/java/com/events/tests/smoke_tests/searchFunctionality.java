@@ -1,4 +1,4 @@
-package com.events.tests.smoke_tests;
+/*package com.events.tests.smoke_tests;
 
 import com.events.pages.LoginPage;
 import com.events.pages.SearchFunctionalityLocators;
@@ -115,3 +115,4 @@ public class searchFunctionality extends TestBase {
 
     }
 }
+*/

@@ -1,4 +1,4 @@
-package com.events.tests.smoke_tests;
+/*package com.events.tests.smoke_tests;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
@@ -46,3 +46,4 @@ public class importFunctionalityTest extends TestBase {
 
 	}
 }
+*/
