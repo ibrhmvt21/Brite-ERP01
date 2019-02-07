@@ -88,7 +88,6 @@ public class BrowserUtils {
 
 
         Driver.getDriver().switchTo().window(all.get(number-1));
-        return;
     }
 
     public static void hover(WebElement element) {

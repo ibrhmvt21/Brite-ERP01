@@ -7,6 +7,10 @@ import com.events.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static com.events.utilities.BrowserUtils.waitForClickablility;
+import static com.events.utilities.BrowserUtils.waitForVisibility;
+
+
 public class eventCatTests extends TestBase {
 
     BrowserUtils utils;
@@ -18,7 +22,7 @@ public class eventCatTests extends TestBase {
         String imp = page.evencat().importButton.getText();
         Assert.assertEquals(imp, "Import");
 
-        utils.wait(5);
+
         page.evencat().eventCat.click();
 
         page.evencat().online.click();
@@ -48,10 +52,10 @@ public class eventCatTests extends TestBase {
 
 
     @Test(description = "Testing Event Categories / BRIT-394")
-    public void userVerifyEventCategories()throws Exception  {
+    public void userVerifyEventCategories()  {
         page.login().loginAsUser();
 
-        utils.wait(5);
+        waitForVisibility(page.evencat().eventCat,5);
         page.evencat().eventCat.click();
 
         String ecText = page.evencat().eventCatText.getText();

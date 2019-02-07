@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 public class eventsReportingLocators {
 
   public eventsReportingLocators(){
+
       PageFactory.initElements(Driver.getDriver(), this);
 }
 

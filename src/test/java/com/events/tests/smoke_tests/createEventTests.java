@@ -2,6 +2,7 @@ package com.events.tests.smoke_tests;
 
 import com.events.pages.LoginPage;
 import com.events.pages.import_createLocators_IBK;
+import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -88,7 +89,8 @@ Verify manger is able to create an event via link labeled as "create"
         loc.startDate.sendKeys(setStartDate());
 
         //Set end Date Time
-        loc.endDate.click();
+        BrowserUtils.waitForClickablility(loc.endDate, 5);
+        //loc.endDate.click();
         loc.endDate.sendKeys(setEndDate());
 
         //confirm event

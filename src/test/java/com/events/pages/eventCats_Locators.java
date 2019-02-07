@@ -14,7 +14,7 @@ public class eventCats_Locators {
     @FindBy(xpath = "//button[contains(text(),'Import')]")
     public WebElement importButton;
 
-    @FindBy(xpath = "//span[contains(text(),'Event Categories')]")
+    @FindBy(xpath = "//a[@href='/web#menu_id=127&action=139']")
     public WebElement eventCat;
 
     @FindBy(xpath = "//td[.='Online']")
