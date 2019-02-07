@@ -67,7 +67,9 @@ public class importFunctionalityLocators {
 
 
 
-		loadFileBtn.sendKeys("/Users/barankar/Documents/BriteERP/Book1.xlsx");
+		loadFileBtn.sendKeys(System.getProperty("user.dir")+"/Book1.xlsx");
+
+
 
 		}
 
