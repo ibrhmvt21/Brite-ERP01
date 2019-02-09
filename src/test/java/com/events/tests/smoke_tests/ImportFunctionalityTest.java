@@ -3,15 +3,13 @@ package com.events.tests.smoke_tests;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.awt.AWTException;
-
 import org.testng.annotations.Test;
 
-import com.events.pages.importFunctionalityLocators;
+import com.events.pages.ImportFunctionalityLocators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 
-public class importFunctionalityTest extends TestBase {
+public class ImportFunctionalityTest extends TestBase {
 //1
 	@Test
 	public void importHelpLinkTest() throws Exception {
@@ -28,7 +26,7 @@ public class importFunctionalityTest extends TestBase {
 		BrowserUtils.switchToWindow(2);
 		extentLogger.info("Verifying URL");
 		System.out.println(driver.getCurrentUrl());
-		assertEquals(driver.getCurrentUrl(), importFunctionalityLocators.helpLinkURL);
+		assertEquals(driver.getCurrentUrl(), ImportFunctionalityLocators.helpLinkURL);
 		extentLogger.pass("Passed: Import Help Link Test");
 
 }

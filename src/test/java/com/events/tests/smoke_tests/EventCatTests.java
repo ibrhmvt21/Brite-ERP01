@@ -1,7 +1,5 @@
 package com.events.tests.smoke_tests;
 
-import com.events.pages.LoginPage;
-import com.events.pages.eventCats_Locators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.Assert;
@@ -11,7 +9,7 @@ import static com.events.utilities.BrowserUtils.waitForClickablility;
 import static com.events.utilities.BrowserUtils.waitForVisibility;
 
 
-public class eventCatTests extends TestBase {
+public class EventCatTests extends TestBase {
 
     BrowserUtils utils;
 

@@ -18,8 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 //1
-public class importFunctionalityLocators {
-	public importFunctionalityLocators() {
+public class ImportFunctionalityLocators {
+	public ImportFunctionalityLocators() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 

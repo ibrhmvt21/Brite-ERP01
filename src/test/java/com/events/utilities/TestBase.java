@@ -18,13 +18,13 @@ public abstract class TestBase {
     protected static ExtentTest extentLogger;
 
 
-    protected pages page;
+    protected Pages page;
 
 
     @BeforeMethod
     public void setupMethod() {
         driver = Driver.getDriver();
-        page= new pages();
+        page= new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }

@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 import static org.testng.Assert.assertEquals;
 
-public class listButtonFunctionalityTest extends TestBase {
+public class ListButtonFunctionalityTest extends TestBase {
 
 
     @Test
