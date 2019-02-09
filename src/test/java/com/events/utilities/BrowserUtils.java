@@ -68,6 +68,7 @@ public class BrowserUtils {
      * returns to original window if windows with given title not found
      */
     public static void switchToWindow(String targetTitle) {
+       // String origin = Driver.getDriver().getWindowHandle();
         String origin = Driver.getDriver().getWindowHandle();
         for (String handle : Driver.getDriver().getWindowHandles()) {
             Driver.getDriver().switchTo().window(handle);
