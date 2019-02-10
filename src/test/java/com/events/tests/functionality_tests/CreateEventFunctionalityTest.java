@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
+
 public class CreateEventFunctionalityTest extends TestBase {
 
 
@@ -63,4 +65,85 @@ public class CreateEventFunctionalityTest extends TestBase {
         Assert.assertEquals(actualText, "Maximum Attendees");
 
     }
+
+    @Test(description = "BRIT-1587")
+    public void verifyUpcomingEvents() throws ParseException {
+        extentLogger=report.createTest("Verify Upcaoming Events Tes");
+        extentLogger.info("Login as a manager");
+        page.login().loginAsManager();
+
+
+        BrowserUtils.waitForPageToLoad(5);
+        extentLogger.info("Locate the date of upcoming events");
+        String actualDate1=page.Import_Create().upcomingDate1.getText();
+        String actualDate2=page.Import_Create().upcomingDate2.getText();
+
+        String actDate=(actualDate1+" "+actualDate2);
+        System.out.println(page.Import_Create().todaysDate());
+
+        extentLogger.info("Compare today's date with the event's date");
+
+
+        int mes=page.Import_Create().compareDates(page.Import_Create().todaysDate(),actDate);
+
+        Assert.assertTrue(mes==0 || mes<0);
+
+
+    }
+
+    @Test(description = "BRIT-1592")
+    public void verifyNumberOfAttendees()  {
+        extentLogger=report.createTest("Verify Number of Attendees is visible Test");
+        extentLogger.info("Login as a user");
+        page.login().loginAsUser();
+
+        BrowserUtils.waitForPageToLoad(5);
+        extentLogger.info("Locate the number of attendees text");
+        String expcText=page.Import_Create().numAttend.getText();
+
+        extentLogger.info("Verify text contains expected attendees");
+        System.out.println(expcText);
+        Assert.assertTrue(expcText.contains("Expected attendees"));
+
+    }
+
+    @Test(description = "BRIT-1595")
+    public void cancelEventAsManager()  {
+        extentLogger=report.createTest("Verify Manager has Ability to Cancel an Event");
+        extentLogger.info("Login as a Manager");
+        page.login().loginAsManager();
+
+        BrowserUtils.waitForPageToLoad(5);
+        extentLogger.info("Clcik on a random event");
+        page.Import_Create().randomEvent.click();
+
+        extentLogger.info("Verify Cancel Event button is displayed");
+
+        String text = page.Import_Create().cancelEvent.getText();
+
+        Assert.assertTrue(text.contains("Cancel Event"));
+
+    }
+
+    @Test(description = "BRIT-1600")
+    public void cancelEventAsUser()  {
+        extentLogger=report.createTest("Verify User does not have Ability to Cancel an Event");
+        extentLogger.info("Login as a User");
+        page.login().loginAsUser();
+
+        BrowserUtils.waitForPageToLoad(5);
+        extentLogger.info("Clcik on a random event");
+        page.Import_Create().randomEvent.click();
+
+        extentLogger.info("Verify Error message is displayed when user tries to cancel an event");
+
+       page.Import_Create().cancelEvent.click();
+
+       String actText=page.Import_Create().errorMessg2.getText();
+
+       Assert.assertTrue(actText.contains("you are not allowed to modify"));
+
+    }
+
 }
+

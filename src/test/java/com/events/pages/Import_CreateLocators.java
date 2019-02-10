@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -55,6 +56,22 @@ public class Import_CreateLocators extends BrowserUtils{
         @FindBy(xpath = "(//td[@class='o_td_label'])[12]/label")
         public WebElement maxAttend;
 
+        @FindBy(xpath = "(//div[@class='o_event_left'])[1]/div")
+        public WebElement upcomingDate1;
+
+        @FindBy(xpath = "(//div[@class='o_event_left'])[1]/div[2]")
+        public WebElement upcomingDate2;
+
+        @FindBy(xpath = "(//div[@class='o_event_right'])[1]/h4[2]")
+        public WebElement numAttend;
+
+       @FindBy(xpath ="(//button[@class='btn btn-sm btn-default'])")
+        public WebElement cancelEvent;
+
+       @FindBy (xpath = "(//div[@class='o_dialog_warning modal-body'])")
+       public WebElement errorMessg2;
+
+
         public List<String> createText(String xPath){
                 List <WebElement> allBtnz=Driver.getDriver().findElements(By.xpath(xPath));
 
@@ -90,5 +107,33 @@ public class Import_CreateLocators extends BrowserUtils{
                 Date currentDatePlusOne = c.getTime();
                 String futureDate = form.format(currentDatePlusOne);
                 return futureDate;
+        }
+
+        public String todaysDate(){
+                DateFormat today=new SimpleDateFormat("dd MMM yyyy");
+                Date date =new Date();
+                String today2= today.format(date);
+
+                return today2;
+        }
+
+        public int compareDates(String date1, String date2) throws ParseException {
+                SimpleDateFormat sdf = new SimpleDateFormat("dd MMM yyyy");
+                Date dat1 = sdf.parse(date1);
+                Date dat2 = sdf.parse(date2);
+
+                if (dat1.compareTo(dat2) > 0) {
+                        String s1 =("Today's date is after Event date");
+                        return 1;
+
+                } else if (dat1.compareTo(dat2) < 0) {
+                        String s2= ("Today's date is before Event date");
+                        return -1;
+
+                } else  {
+                        String s3= ("Today's date is equal to Event date");
+                        return 0;
+                }
+
         }
 }
