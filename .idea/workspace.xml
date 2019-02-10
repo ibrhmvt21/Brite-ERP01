@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3d2a461-f6df-4178-9df2-656fbbe8fca0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ignoregit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/pages/eventsReportingLocators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/pages/eventsReportingLocators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/listButtonFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/listButtonFunctionalityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/listButton_Functionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/listButton_Functionality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/searchFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/searchFunctionalityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_TestEvReporting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_TestEvReporting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/events/utilities/pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/events/utilities/pages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/pages/eventsReportingLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/pages/eventsReportingLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/pages/listButtonLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/pages/listButtonLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/pages/searchFunctionalityLocators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/pages/searchFunctionalityLocators.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/tests/functionality_tests/eventsReportingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/tests/functionality_tests/eventsReportingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/tests/functionality_tests/listButtonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/tests/smoke_tests/smoke_Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/utilities/BrowserUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/events/utilities/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/events/utilities/TestBase.class" afterDir="false" />
-    </list>
+    <list default="true" id="b3d2a461-f6df-4178-9df2-656fbbe8fca0" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +13,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.54523426">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/events/pages/eventsReportingLocators.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="83">
@@ -56,10 +36,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_TestEvReporting.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1156">
+                <state relative-caret-position="1230">
                   <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -87,18 +67,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="129">
                   <caret line="38" selection-start-line="38" selection-end-line="38" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/events/pages/listbuttonlocators.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
-                  <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -178,7 +146,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/functionality_tests/eventsReportingTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
+                <state relative-caret-position="120">
                   <caret line="64" column="108" selection-start-line="64" selection-start-column="63" selection-end-line="64" selection-end-column="108" />
                 </state>
               </provider>
@@ -266,8 +234,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1203" />
-    <option name="y" value="424" />
+    <option name="x" value="-1271" />
+    <option name="y" value="329" />
     <option name="width" value="1280" />
     <option name="height" value="731" />
   </component>
@@ -311,58 +279,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="functionality_tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="smoke_tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
-              <item name="utilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BriteERP_Events" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Brite-ERP01" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -372,7 +288,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549783873098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549785072728" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -592,9 +508,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1203" y="424" width="1280" height="731" extended-state="0" />
+    <frame x="-1271" y="329" width="1280" height="731" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.093699515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29886913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -603,12 +519,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286385" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31611893" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31611893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2769953" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2769953" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32876712" />
@@ -691,13 +607,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SmokeTest.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/events/utilities/BrowserUtils.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -835,18 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/pages/eventsReportingLocators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#329#330#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/searchFunctionalityTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -870,10 +767,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/events/tests/smoke_tests/smoke_TestEvReporting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
+        <state relative-caret-position="1230">
           <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/events/pages/eventsReportingLocators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
