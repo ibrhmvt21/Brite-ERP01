@@ -19,10 +19,10 @@ import static org.testng.Assert.assertTrue;
 import static org.testng.Assert.fail;
 
 
-//	OPTIONAL
+
 
 public class BrowserUtils {
-    private String test="ghjkljhgjkm,";
+
 
     public static void wait(int secs) {
         try {

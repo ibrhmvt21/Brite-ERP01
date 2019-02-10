@@ -15,7 +15,7 @@ import static org.testng.Assert.assertTrue;
 
 public class CreateEventTests extends TestBase {
 
-    @Test
+    @Test(description = "BRIT-1568")
     public void createEventAsManager()  {
         extentLogger.info("Login as Manager");
         page.login().loginAsManager();
@@ -49,7 +49,7 @@ public class CreateEventTests extends TestBase {
         Assert.assertEquals(s1,expectedName);
     }
 
-    @Test
+    @Test(description = "BRIT-1561")
     public void createEventAsUser()  {
 
         extentLogger.info("Login as a user");
@@ -61,13 +61,14 @@ public class CreateEventTests extends TestBase {
 
     }
 
-    @Test
+    @Test(description = "BRIT-1570")
     public void importEventAsUser()  {
 
-        extentLogger.info("Login as a user");
+       // extentLogger.info("Login as a user");
         page.login().loginAsUser();
 
-        extentLogger.info("Verify user can not upload a file");
+      //  extentLogger.info("Verify user can not upload a file");
+
         Assert.assertFalse(
                 page.Import_Create().createText("//button").contains("Import"));
 

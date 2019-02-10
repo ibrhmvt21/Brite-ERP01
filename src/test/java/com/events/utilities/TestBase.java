@@ -15,7 +15,7 @@ public abstract class TestBase {
 
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
-    protected static ExtentTest extentLogger;
+    public static ExtentTest extentLogger;
 
 
     protected Pages page;

@@ -43,7 +43,17 @@ public class Import_CreateLocators extends BrowserUtils{
         @FindBy(xpath = "(//h4[@class='o_kanban_record_title']/span)[1]")
         public WebElement existingName;
 
+        @FindBy(xpath = "//div[@class='o_notification_manager']/div")
+        public WebElement errorMessg;
 
+        @FindBy(xpath = "//button[@accesskey='a']")
+        public WebElement editButton;
+
+        @FindBy (xpath = "(//div[@class='o_kanban_view o_event_kanban_view o_kanban_ungrouped']/div)[1]")
+        public WebElement randomEvent;
+
+        @FindBy(xpath = "(//td[@class='o_td_label'])[12]/label")
+        public WebElement maxAttend;
 
         public List<String> createText(String xPath){
                 List <WebElement> allBtnz=Driver.getDriver().findElements(By.xpath(xPath));
