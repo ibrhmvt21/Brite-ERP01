@@ -15,7 +15,7 @@ public class listButton_Functionality extends TestBase {
 
 
     @Test
-    public void ListTest() throws InterruptedException {
+    public void ListTest() throws Exception {
         extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
@@ -29,7 +29,7 @@ public class listButton_Functionality extends TestBase {
     }
 
     @Test
-    public void pivotButton(){
+    public void pivotButton() throws Exception {
         extentLogger=report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");

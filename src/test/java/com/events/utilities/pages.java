@@ -1,6 +1,8 @@
 package com.events.utilities;
 
 import com.events.pages.*;
+import com.events.tests.functionality_tests.eventsReportingTest;
+
 public class pages {
 	private SearchFunctionalityLocators searchF;
 	private LoginPage loginPage;
@@ -8,6 +10,7 @@ public class pages {
 	private listbuttonlocators listButton;
 	private eventCats_Locators evencats;
 	private listbuttonlocators list;
+	private eventsReportingTest EventsReports;
 
 	  public LoginPage login() {
 	        if (loginPage == null) {
@@ -47,13 +50,16 @@ public class pages {
 		}
 		return evencats;
 	}
-	
-	
-	
-	public listbuttonlocators listButtonLocators() {
-		if (list == null) {
-			list = new listbuttonlocators();
+
+	public eventsReportingTest EventsRepo(){
+	  	if (EventsReports == null){
+	  		EventsReports = new eventsReportingTest();
 		}
-		return list;
+	  	return EventsReports;
 	}
-}
+	
+	
+	
+
+	}
+

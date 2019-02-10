@@ -15,7 +15,7 @@ public class searchFunctionalityTest extends TestBase {
 
 
     @Test(groups = "group1")
-    public void TestCase1() {
+    public void TestCase1() throws Exception {
         extentLogger = report.createTest("Search fuctionlity testcase 1 executed");
         page.login().loginAsManager();
         extentLogger.pass("Clicked on Events lInk");
@@ -49,7 +49,7 @@ public class searchFunctionalityTest extends TestBase {
 
 
     @Test(groups = "groutp2")
-    public void TestCase2() {
+    public void TestCase2() throws Exception {
         page.login().loginAsManager();
         extentLogger = report.createTest("Search fuctionlity testcase 2 executed");
 
@@ -77,7 +77,7 @@ public class searchFunctionalityTest extends TestBase {
 
 
     @Test(groups = "group3")
-    public void TestCase3() {
+    public void TestCase3() throws Exception {
         page.login().loginAsManager();
         extentLogger = report.createTest("Search fuctionlity testcase 3 executed");
 

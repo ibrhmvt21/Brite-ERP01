@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Brite-ERP01" />
+        <module name="Brite-ERP-k01" />
         <module name="BriteERP_Events" />
       </profile>
     </annotationProcessing>
