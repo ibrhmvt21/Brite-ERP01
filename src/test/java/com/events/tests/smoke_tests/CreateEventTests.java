@@ -16,7 +16,9 @@ import static org.testng.Assert.assertTrue;
 public class CreateEventTests extends TestBase {
 
     @Test(description = "BRIT-1568")
-    public void createEventAsManager()  {
+    public void createEventAsManager() {
+
+        extentLogger = report.createTest("Create event as a manager");
         extentLogger.info("Login as Manager");
         page.login().loginAsManager();
         extentLogger.info("Click on create event button");
@@ -44,14 +46,15 @@ public class CreateEventTests extends TestBase {
 
         extentLogger.info("Verify event is created");
         page.Import_Create().eventsButton.click();
-        String s1=page.Import_Create().existingName.getText();
+        String s1 = page.Import_Create().existingName.getText();
 
-        Assert.assertEquals(s1,expectedName);
+        Assert.assertEquals(s1, expectedName);
     }
 
     @Test(description = "BRIT-1561")
-    public void createEventAsUser()  {
+    public void createEventAsUser() {
 
+        extentLogger = report.createTest("Create Event as A User");
         extentLogger.info("Login as a user");
         page.login().loginAsUser();
 
@@ -62,12 +65,12 @@ public class CreateEventTests extends TestBase {
     }
 
     @Test(description = "BRIT-1570")
-    public void importEventAsUser()  {
-
-       // extentLogger.info("Login as a user");
+    public void importEventAsUser() {
+        extentLogger = report.createTest("Import Event as A User");
+        extentLogger.info("Login as a user");
         page.login().loginAsUser();
 
-      //  extentLogger.info("Verify user can not upload a file");
+        extentLogger.info("Verify user can not upload a file");
 
         Assert.assertFalse(
                 page.Import_Create().createText("//button").contains("Import"));
