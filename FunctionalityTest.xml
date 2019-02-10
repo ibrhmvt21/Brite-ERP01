@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BriteERP Project Functionality Tests">
+
+    <test name="Functionality">
+
+        <packages>
+            <package name="com.events.tests.functionality_tests"/>
+        </packages>
+    </test>
+</suite>
