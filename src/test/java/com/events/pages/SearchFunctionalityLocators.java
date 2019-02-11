@@ -4,7 +4,8 @@ import com.events.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-//2
+import org.testng.annotations.Test;
+
 public class SearchFunctionalityLocators {
     public SearchFunctionalityLocators() {
         PageFactory.initElements(Driver.getDriver(),this);
@@ -45,6 +46,24 @@ public class SearchFunctionalityLocators {
 
     @FindBy(xpath = "//ul[@class='dropdown-menu o_filters_menu']//li[4]")
     public WebElement confirmedEvents;
+
+    @FindBy(xpath = "//span[contains(text(),'Event Categories')]")
+    public WebElement EvenCategories;
+
+    @FindBy(xpath = "//div[1]/div[2]/div[1]/div[1]/button[1]")
+    public WebElement create;
+
+    @FindBy(xpath = "//div[1]/div[1]/h1[1]/input[1]")
+    public WebElement eventCategories;
+    @FindBy(xpath = "//div[1]/div[2]/div[2]/div[1]/div[1]/input[1]")
+    public WebElement userdefaulttime;
+    @FindBy(xpath = "(//button[@type='button'][contains(text(),'Save')])[1]")
+    public WebElement save;
+
+    @FindBy(xpath = "//td[contains(text(),'Food')]")
+    public WebElement food;
+    @FindBy(xpath = "//span[@name='name']")
+    public WebElement expectedresult;
 
 
 }
