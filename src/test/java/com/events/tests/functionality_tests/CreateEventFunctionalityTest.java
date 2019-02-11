@@ -143,6 +143,7 @@ public class CreateEventFunctionalityTest extends TestBase {
 
        Assert.assertTrue(actText.contains("you are not allowed to modify"));
 
+
     }
 
 }
