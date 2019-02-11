@@ -71,9 +71,9 @@ public class CreateEventTests extends TestBase {
         page.login().loginAsUser();
 
         extentLogger.info("Verify user can not upload a file");
-
         Assert.assertFalse(
                 page.Import_Create().createText("//button").contains("Import"));
+
 
     }
 

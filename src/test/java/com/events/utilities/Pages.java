@@ -60,6 +60,7 @@ public class Pages {
 			searchFunctionObj = new SearchFunctionalityLocators();
 		}
 		return searchFunctionObj;
+
 	}
 
 
