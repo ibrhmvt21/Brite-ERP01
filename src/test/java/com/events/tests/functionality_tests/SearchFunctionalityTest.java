@@ -3,7 +3,7 @@ package com.events.tests.functionality_tests;
 import com.events.pages.LoginPage;
 import org.testng.annotations.Test;
 
-public class searchFunctionalityTest {
+public class SearchFunctionalityTest {
 
 	  @Test
 	  public void TestCase1() {

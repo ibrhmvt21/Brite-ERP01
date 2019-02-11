@@ -3,15 +3,13 @@ package com.events.tests.smoke_tests;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.awt.AWTException;
-
 import org.testng.annotations.Test;
 
-import com.events.pages.importFunctionalityLocators;
+import com.events.pages.ImportFunctionalityLocators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 
-public class importFunctionalityTest extends TestBase {
+public class ImportFunctionalityTest extends TestBase {
 //1
 	@Test
 	public void importHelpLinkTest() throws Exception {
@@ -22,12 +20,16 @@ public class importFunctionalityTest extends TestBase {
 		page.importFunctionality().importBtn.click();
 		page.importFunctionality().helpBtn.click();
 		extentLogger.info("Clicked Help link text");
+
+
+		BrowserUtils.wait(5);
 		BrowserUtils.switchToWindow(2);
 		extentLogger.info("Verifying URL");
-		assertEquals(driver.getCurrentUrl(), importFunctionalityLocators.helpLinkURL);
+		System.out.println(driver.getCurrentUrl());
+		assertEquals(driver.getCurrentUrl(), ImportFunctionalityLocators.helpLinkURL);
 		extentLogger.pass("Passed: Import Help Link Test");
 
-	}
+}
 	
 	@Test
 	public void importFileUploadTest() throws Exception {
@@ -35,9 +37,12 @@ public class importFunctionalityTest extends TestBase {
 		page.login().loginAsManager();
 		extentLogger.info("Logged in as Manager");
 
+
+
+		extentLogger.info("Uploading file...");
 		page.importFunctionality().importBtn.click();
 		page.importFunctionality().loadFile();
-		extentLogger.info("Uploading file...");
+
 
 		BrowserUtils.waitForVisibility(page.importFunctionality().MapString, 10);
 		assertTrue(page.importFunctionality().MapString.isDisplayed());

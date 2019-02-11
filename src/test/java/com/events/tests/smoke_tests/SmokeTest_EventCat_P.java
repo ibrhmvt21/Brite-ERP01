@@ -1,7 +1,7 @@
 package com.events.tests.smoke_tests;
 
 import com.events.pages.LoginPage;
-import com.events.pages.eventCats_Locators;
+import com.events.pages.EventCats_Locators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.Assert;
@@ -11,7 +11,7 @@ public class SmokeTest_EventCat_P extends TestBase {
 
     LoginPage page;
     BrowserUtils utils;
-    eventCats_Locators evencat = new eventCats_Locators();
+    EventCats_Locators evencat = new EventCats_Locators();
 
 
     @Test(description = "Testing Event Categories / BRIT-385" )

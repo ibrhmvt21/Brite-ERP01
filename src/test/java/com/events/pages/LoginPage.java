@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.events.utilities.BrowserUtils;
+
 import com.events.utilities.ConfigurationReader;
 import com.events.utilities.Driver;
 
@@ -40,9 +40,11 @@ public class LoginPage extends BrowserUtils {
 			loginBtn.click();
 
 
-			wait(5);
+			wait(10);
 
-			//BrowserUtils.waitForClickablility(EventsModule, 5);
+			//waitForClickablility(EventsModule, 5);
+
+
 
 			EventsModule.click();
 		}
@@ -54,9 +56,9 @@ public class LoginPage extends BrowserUtils {
 			loginBtn.click();
 
 
-			wait(5);
+			wait(10);
 
-			//BrowserUtils.waitForClickablility(EventsModule, 5);
+			//waitForClickablility(EventsModule, 5);
 			EventsModule.click();
 		}
 
