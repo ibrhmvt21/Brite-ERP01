@@ -15,13 +15,16 @@ public abstract class TestBase {
 
     protected static ExtentReports report;
     private static ExtentHtmlReporter htmlReporter;
-    protected static ExtentTest extentLogger;
-    protected pages page;
+    public static ExtentTest extentLogger;
+
+
+    protected Pages page;
+
 
     @BeforeMethod
     public void setupMethod() {
         driver = Driver.getDriver();
-        page= new pages();
+        page= new Pages();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get(ConfigurationReader.getProperty("url"));
     }
@@ -64,10 +67,10 @@ public abstract class TestBase {
         report.setSystemInfo("Browser", ConfigurationReader.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
 
-        report.setSystemInfo("QA Engineer", "Admiral Kunkka");
+        report.setSystemInfo("QA Engineer", "ELITE SQUAD");
 
-        htmlReporter.config().setDocumentTitle("Prestashop Reports");
-        htmlReporter.config().setReportName("Prestashop Automated Test Reports");
+        htmlReporter.config().setDocumentTitle("BriteERP Events Module");
+        htmlReporter.config().setReportName("Smoke Test Reports");
 
 //       htmlReporter.config().setTheme(Theme.DARK);
 

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test">
+
+	<test name="Create Event Test">
+		<classes>
+			<class name="com.events.tests.smoke_tests.createEventTests"></class>
+			<class name="com.events.tests.smoke_tests.eventCatTests"></class>
+			<class name="com.events.tests.smoke_tests.importFunctionalityTest"></class>
+			<class name="com.events.tests.smoke_tests.searchFunctionalityTest"></class>	
+			<class name="com.events.tests.smoke_tests.listButtonFunctionalityTest"></class>	
+			
+		</classes>
+	</test>
+</suite>

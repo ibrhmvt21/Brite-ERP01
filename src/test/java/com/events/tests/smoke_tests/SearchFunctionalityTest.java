@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class searchFunctionality extends TestBase {
+public class SearchFunctionalityTest extends TestBase {
 
     @Test(groups = "group1")
     public void TestCase1() {
