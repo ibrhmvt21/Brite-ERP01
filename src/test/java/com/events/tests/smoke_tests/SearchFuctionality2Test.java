@@ -1,4 +1,4 @@
-package com.events.tests.functionality_tests;
+package com.events.tests.smoke_tests;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.events.utilities.TestBase;
