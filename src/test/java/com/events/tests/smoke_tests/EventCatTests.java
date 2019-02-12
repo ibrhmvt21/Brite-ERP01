@@ -1,13 +1,15 @@
 package com.events.tests.smoke_tests;
 
-import com.events.pages.LoginPage;
-import com.events.pages.eventCats_Locators;
 import com.events.utilities.BrowserUtils;
 import com.events.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class eventCatTests extends TestBase {
+import static com.events.utilities.BrowserUtils.waitForClickablility;
+import static com.events.utilities.BrowserUtils.waitForVisibility;
+
+
+public class EventCatTests extends TestBase {
 
     BrowserUtils utils;
 
@@ -18,7 +20,7 @@ public class eventCatTests extends TestBase {
         String imp = page.evencat().importButton.getText();
         Assert.assertEquals(imp, "Import");
 
-        wait(5);
+
         page.evencat().eventCat.click();
 
         page.evencat().online.click();
@@ -48,10 +50,10 @@ public class eventCatTests extends TestBase {
 
 
     @Test(description = "Testing Event Categories / BRIT-394")
-    public void userVerifyEventCategories()throws Exception  {
+    public void userVerifyEventCategories()  {
         page.login().loginAsUser();
 
-        utils.wait(5);
+        waitForVisibility(page.evencat().eventCat,5);
         page.evencat().eventCat.click();
         
 

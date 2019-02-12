@@ -11,7 +11,7 @@ import com.events.utilities.TestBase;
 
 import java.util.List;
 
-public class eventsReportingTest extends TestBase {
+public class EventsReportingTest extends TestBase {
 	LoginPage page;
 
 

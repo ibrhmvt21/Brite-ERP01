@@ -8,15 +8,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class listbuttonlocators {
 
-    public listbuttonlocators() {
 
+
+
+
+
+public class ListButtonLocators {
+    public ListButtonLocators() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-
-
-    @FindBy(xpath = "//div[@class='btn-group btn-group-sm o_cp_switch_buttons']//button[3]")
+    @FindBy(xpath="//div[@class='btn-group btn-group-sm o_cp_switch_buttons']//button[3]")
     public WebElement listbutton;
 
     @FindBy(xpath = "//div[@class='btn-group btn-group-sm o_cp_switch_buttons']//button[4]")

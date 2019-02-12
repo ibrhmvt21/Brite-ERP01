@@ -6,15 +6,20 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.util.concurrent.TimeUnit;
 
+import com.events.utilities.BrowserUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.events.utilities.Driver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 //1
-public class importFunctionalityLocators {
-	public importFunctionalityLocators() {
+public class ImportFunctionalityLocators {
+	public ImportFunctionalityLocators() {
 		PageFactory.initElements(Driver.getDriver(), this);
 	}
 
@@ -26,7 +31,7 @@ public class importFunctionalityLocators {
 	@FindBy(xpath = "//a[@class='pull-right']")
 	public WebElement helpBtn;
 
-	@FindBy(xpath = "//label[@for='my-file-selector']")
+	@FindBy(id = "my-file-selector")
 	public WebElement loadFileBtn;
 	
 	@FindBy(xpath="//h2[.='Map your columns to import']")
@@ -61,7 +66,11 @@ public class importFunctionalityLocators {
 
 		}else if(system.contains("Mac")) {
 
-		importBtn.sendKeys(System.getProperty("user.dir")+"\\Book1.xlsx");
+
+
+		loadFileBtn.sendKeys(System.getProperty("user.dir")+"/Book1.xlsx");
+
+
 
 		}
 

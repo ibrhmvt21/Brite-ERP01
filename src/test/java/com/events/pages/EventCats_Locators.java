@@ -5,16 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class eventCats_Locators {
+public class EventCats_Locators {
 
-    public eventCats_Locators() {
+    public EventCats_Locators() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
     @FindBy(xpath = "//button[contains(text(),'Import')]")
     public WebElement importButton;
 
-    @FindBy(xpath = "//span[contains(text(),'Event Categories')]")
+    @FindBy(xpath = "//a[@href='/web#menu_id=127&action=139']")
     public WebElement eventCat;
 
     @FindBy(xpath = "//td[.='Online']")

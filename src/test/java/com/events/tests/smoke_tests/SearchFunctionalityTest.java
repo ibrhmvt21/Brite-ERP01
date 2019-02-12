@@ -10,9 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class searchFunctionalityTest extends TestBase {
-
-
+public class SearchFunctionalityTest extends TestBase {
 
     @Test(groups = "group1")
     public void TestCase1() {
@@ -63,7 +61,6 @@ public class searchFunctionalityTest extends TestBase {
         page.searchFunctionality().advanceSearch.click();
         extentLogger.pass("clicked on advance search");
 
-
         page.searchFunctionality().filterButton.click();
         extentLogger.pass("clicked on Filter button");
 
@@ -74,7 +71,6 @@ public class searchFunctionalityTest extends TestBase {
         extentLogger.pass("all confirmed Events are Displyed to User");
 
     }
-
 
     @Test(groups = "group3")
     public void TestCase3() {
@@ -90,18 +86,14 @@ public class searchFunctionalityTest extends TestBase {
         page.searchFunctionality().advanceSearch.click();
         extentLogger.pass("clicked on advance search button");
 
-
         WebDriverWait wait1 = new WebDriverWait(Driver.getDriver(),20);
         wait.until(ExpectedConditions.visibilityOf(page.searchFunctionality().groupedby));
 
         page.searchFunctionality().groupedby.click();
         extentLogger.pass("clicked on groupedby filter");
 
-
         page.searchFunctionality().addCostomgroups.click();
         extentLogger.pass("clicked on add costom group button");
-
-
 
         Select select = new Select(page.searchFunctionality().selections);
         select.selectByVisibleText("Dedicated Menu");

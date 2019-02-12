@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 
 import static org.testng.Assert.assertEquals;
 
-public class listButtonFunctionalityTest extends TestBase {
+public class ListButtonFunctionalityTest extends TestBase {
 
 
     @Test
@@ -29,8 +29,8 @@ public class listButtonFunctionalityTest extends TestBase {
     }
 
     @Test
-    public void pivotButton(){
-        extentLogger=report.createTest("Verifying login to the page as Manager");
+    public void pivotButton() {
+        extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
         extentLogger.info("Click on Pivot Button");
@@ -39,8 +39,8 @@ public class listButtonFunctionalityTest extends TestBase {
     }
 
     @Test
-    public void measuresButton(){
-        extentLogger=report.createTest("Verifying login to the page as Manager");
+    public void measuresButton() {
+        extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
         extentLogger.info("Click Pivot Button");
@@ -52,8 +52,8 @@ public class listButtonFunctionalityTest extends TestBase {
     }
 
     @Test
-    public void flipAxis(){
-        extentLogger=report.createTest("Verifying login to the page as Manager");
+    public void flipAxis() {
+        extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
         extentLogger.info("Click Pivot Button");
@@ -64,8 +64,8 @@ public class listButtonFunctionalityTest extends TestBase {
     }
 
     @Test
-    public void expandAll(){
-        extentLogger=report.createTest("Verifying login to the page as Manager");
+    public void expandAll() {
+        extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
         extentLogger.info("Click Pivot Button");
@@ -76,8 +76,8 @@ public class listButtonFunctionalityTest extends TestBase {
     }
 
     @Test
-    public void download(){
-        extentLogger=report.createTest("Verifying login to the page as Manager");
+    public void download() {
+        extentLogger = report.createTest("Verifying login to the page as Manager");
         page.login().loginAsManager();
         extentLogger.info("Logged in as manager");
         extentLogger.info("Click Pivot Button");
