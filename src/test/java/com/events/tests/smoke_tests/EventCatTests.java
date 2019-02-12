@@ -46,6 +46,8 @@ public class EventCatTests extends TestBase {
         String expectedTitle = "Event Categories - Odoo";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
+
+
     }
 
 
