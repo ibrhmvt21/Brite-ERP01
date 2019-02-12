@@ -9,7 +9,7 @@ import static com.events.utilities.BrowserUtils.waitForClickablility;
 import static com.events.utilities.BrowserUtils.waitForVisibility;
 
 
-public class EventCatTests extends TestBase {
+public class EventCategoriesTest extends TestBase {
 
     BrowserUtils utils;
 
@@ -19,7 +19,6 @@ public class EventCatTests extends TestBase {
 
         String imp = page.evencat().importButton.getText();
         Assert.assertEquals(imp, "Import");
-
 
         page.evencat().eventCat.click();
 
@@ -46,7 +45,6 @@ public class EventCatTests extends TestBase {
         String expectedTitle = "Event Categories - Odoo";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
-
 
     }
 
