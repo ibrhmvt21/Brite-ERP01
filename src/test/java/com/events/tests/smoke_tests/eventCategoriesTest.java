@@ -7,7 +7,7 @@ import com.events.utilities.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SmokeTest_EventCat_P extends TestBase {
+public class eventCategoriesTest extends TestBase {
 
     LoginPage page;
     BrowserUtils utils;

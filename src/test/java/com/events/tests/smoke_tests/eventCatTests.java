@@ -18,7 +18,7 @@ public class eventCatTests extends TestBase {
         String imp = page.evencat().importButton.getText();
         Assert.assertEquals(imp, "Import");
 
-        utils.wait(5);
+        wait(5);
         page.evencat().eventCat.click();
 
         page.evencat().online.click();
@@ -53,6 +53,7 @@ public class eventCatTests extends TestBase {
 
         utils.wait(5);
         page.evencat().eventCat.click();
+        
 
         String ecText = page.evencat().eventCatText.getText();
         Assert.assertEquals(ecText, "Event Categories");

@@ -21,9 +21,11 @@ public class importFunctionalityTest extends TestBase {
 
 		page.importFunctionality().importBtn.click();
 		page.importFunctionality().helpBtn.click();
+		BrowserUtils.wait(5);
 		extentLogger.info("Clicked Help link text");
 		BrowserUtils.switchToWindow(2);
 		extentLogger.info("Verifying URL");
+		
 		assertEquals(driver.getCurrentUrl(), importFunctionalityLocators.helpLinkURL);
 		extentLogger.pass("Passed: Import Help Link Test");
 
@@ -37,6 +39,7 @@ public class importFunctionalityTest extends TestBase {
 
 		page.importFunctionality().importBtn.click();
 		page.importFunctionality().loadFile();
+
 		extentLogger.info("Uploading file...");
 
 		BrowserUtils.waitForVisibility(page.importFunctionality().MapString, 10);

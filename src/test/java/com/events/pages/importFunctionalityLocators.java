@@ -33,7 +33,8 @@ public class importFunctionalityLocators {
 	public WebElement MapString;
 
 	public static String helpLinkURL = "https://www.odoo.com/documentation/user/11.0/general/base_import/import_faq.html";
-
+	
+	
 	public void loadFile() throws InterruptedException, AWTException {
 
 
@@ -43,7 +44,7 @@ public class importFunctionalityLocators {
 		if(system.contains("Windows")) {
 			
             loadFileBtn.click();
-            StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\Book2.xlsx");
+            StringSelection ss = new StringSelection(System.getProperty("user.dir")+"\\Book1.xlsx");
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         	Robot robot = new Robot();
@@ -60,7 +61,7 @@ public class importFunctionalityLocators {
 
 		}else if(system.contains("Mac")) {
 
-		importBtn.sendKeys("/Users/barankar/Documents/BriteERP/Book1.xlsx");
+		importBtn.sendKeys(System.getProperty("user.dir")+"\\Book1.xlsx");
 
 		}
 

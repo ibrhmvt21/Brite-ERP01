@@ -37,4 +37,53 @@ public class listButtonFunctionalityTest extends TestBase {
         page.listButtonLocators().pivotButton.click();
         extentLogger.pass("verified Pivot button functionality");
     }
+
+    @Test
+    public void measuresButton(){
+        extentLogger=report.createTest("Verifying login to the page as Manager");
+        page.login().loginAsManager();
+        extentLogger.info("Logged in as manager");
+        extentLogger.info("Click Pivot Button");
+        page.listButtonLocators().pivotButton.click();
+        extentLogger.info("Click on Measures Button");
+        page.listButtonLocators().measures.click();
+        extentLogger.pass("Verified Measures button functionality");
+
+    }
+
+    @Test
+    public void flipAxis(){
+        extentLogger=report.createTest("Verifying login to the page as Manager");
+        page.login().loginAsManager();
+        extentLogger.info("Logged in as manager");
+        extentLogger.info("Click Pivot Button");
+        page.listButtonLocators().pivotButton.click();
+        extentLogger.info("Click on FlipAxis Button");
+        page.listButtonLocators().flipAxis.click();
+        extentLogger.pass("Verified Flip Axis button functionality");
+    }
+
+    @Test
+    public void expandAll(){
+        extentLogger=report.createTest("Verifying login to the page as Manager");
+        page.login().loginAsManager();
+        extentLogger.info("Logged in as manager");
+        extentLogger.info("Click Pivot Button");
+        page.listButtonLocators().pivotButton.click();
+        extentLogger.info("Click on Expand All Button");
+        page.listButtonLocators().expandAll.click();
+        extentLogger.pass("Verified Expand All functionality");
+    }
+
+    @Test
+    public void download(){
+        extentLogger=report.createTest("Verifying login to the page as Manager");
+        page.login().loginAsManager();
+        extentLogger.info("Logged in as manager");
+        extentLogger.info("Click Pivot Button");
+        page.listButtonLocators().pivotButton.click();
+        extentLogger.info("Click on download Button");
+        page.listButtonLocators().download.click();
+        extentLogger.pass("Verified download button functionality");
+    }
 }

@@ -101,7 +101,7 @@ Verify manger is able to create an event via link labeled as "create"
         Assert.assertEquals(s1,expectedName);
     }
 
-    @Test
+   @Test
     public void createEventAsUser() throws Exception {
 
         page.login().loginAsUser();
@@ -109,6 +109,7 @@ Verify manger is able to create an event via link labeled as "create"
         Assert.assertFalse(createText("//button").contains("Create"));
 
     }
+
 
     @Test
     public void importEventAsUser() throws Exception {
