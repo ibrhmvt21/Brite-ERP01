@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class eventCats_Kanban_Test extends TestBase {
+public class EventCats_Kanban_Test extends TestBase {
 
     BrowserUtils utils;
 
