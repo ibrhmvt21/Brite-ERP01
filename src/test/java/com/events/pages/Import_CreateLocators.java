@@ -68,6 +68,7 @@ public class Import_CreateLocators extends BrowserUtils{
        @FindBy(xpath ="(//button[@class='btn btn-sm btn-default'])")
         public WebElement cancelEvent;
 
+       
        @FindBy (xpath = "(//div[@class='o_dialog_warning modal-body'])")
        public WebElement errorMessg2;
 
